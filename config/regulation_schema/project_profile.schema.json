@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local工程建设项目/project-profile.v1.schema.json",
+  "title": "工程建设项目 ProjectProfile",
+  "type": "object",
+  "required": ["profiles"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "profile_model": { "const": "ProjectProfile" },
+    "profiles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["profile_id", "name", "taxonomy_ref", "regulation_package"],
+        "properties": {
+          "profile_id": { "type": "string", "pattern": "^P0[1-9]$" },
+          "name": { "type": "string" },
+          "legacy_project_type": { "type": "string" },
+          "taxonomy_ref": { "type": "string" },
+          "regulation_package": { "type": "string" },
+          "route_status": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

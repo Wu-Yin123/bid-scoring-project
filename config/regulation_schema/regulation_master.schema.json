@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local工程建设项目/regulation-master.v1.schema.json",
+  "title": "工程建设项目法规标准主规则库",
+  "type": "object",
+  "required": ["rules"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "library_name": { "type": "string" },
+    "updated_at": { "type": "string" },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["rule_id", "text", "content_hash", "categories", "status", "sources"],
+        "properties": {
+          "rule_id": { "type": "string", "minLength": 1 },
+          "text": { "type": "string", "minLength": 1 },
+          "content_hash": { "type": "string" },
+          "categories": { "type": "array", "items": { "type": "string" } },
+          "subcategory_codes": { "type": "array", "items": { "type": "string" } },
+          "professional_tag_codes": { "type": "array", "items": { "type": "string" } },
+          "scene_codes": { "type": "array", "items": { "type": "string" } },
+          "dimensions": { "type": "array", "items": { "type": "string" } },
+          "dimension_codes": { "type": "array", "items": { "type": "string" } },
+          "status": { "type": "string" },
+          "sources": { "type": "array", "items": { "type": "object" } }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

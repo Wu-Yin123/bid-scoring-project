@@ -1,0 +1,293 @@
+{
+    "category_code": "P02",
+    "category_name": "建筑装饰、修缮及既有建筑改造工程",
+    "professional_tag_rule_ids": {
+        "TAG-BUILDING": [
+            "RL-29DE934354DF",
+            "RL-97371408AEC4",
+            "RL-5B78E000E2B4",
+            "RL-0586DF4E622F",
+            "RL-4ADBCA077122",
+            "RL-F4FC1CEBC7A7",
+            "RL-210849B5F789",
+            "RL-2EA0110F9C61",
+            "RL-593F83E40D02",
+            "RL-A3A6632BA460",
+            "RL-5D52B01C69FF",
+            "RL-5797D5CD7420",
+            "RL-3282014CADAF",
+            "RL-B9A6C1435684",
+            "RL-D5FCAA3B9B64",
+            "RL-C87FE2DFB76C",
+            "RL-8D0589964392",
+            "RL-B304E15CBB57",
+            "RL-02480623D28A"
+        ],
+        "TAG-COFFERDAM": [
+            "RL-27B04D4FB6D1",
+            "RL-933714442290"
+        ],
+        "TAG-DECORATION": [
+            "RL-593F83E40D02",
+            "RL-A3A6632BA460",
+            "RL-D5FCAA3B9B64",
+            "RL-C87FE2DFB76C",
+            "RL-8D0589964392",
+            "RL-B304E15CBB57",
+            "RL-02480623D28A"
+        ],
+        "TAG-DEMOLITION": [
+            "RL-C23D10FBC165",
+            "RL-3A2149F33108",
+            "RL-1A63C4392426",
+            "RL-FCAEF2138533",
+            "RL-DB1B05F205EE",
+            "RL-C1868B288081",
+            "RL-92052D1BC82E",
+            "RL-59F6D398D023",
+            "RL-AEDF22E84A90",
+            "RL-D286809C8304",
+            "RL-58A4DA911FF6",
+            "RL-7F4E739C06C9",
+            "RL-200607DEE69B",
+            "RL-B94437D77438",
+            "RL-14DC171BE899",
+            "RL-DF203C6C8144",
+            "RL-DBE4C12F8C80",
+            "RL-5B30ADE2C155",
+            "RL-D901DE839996",
+            "RL-1B8AEC310C17",
+            "RL-6CC50CD83F9D",
+            "RL-E7B5E39D6545",
+            "RL-692ED2F19475",
+            "RL-34A75C7A89EF",
+            "RL-7AEF63D75FB4",
+            "RL-2EA0110F9C61",
+            "RL-53B42588C58B",
+            "RL-27B04D4FB6D1",
+            "RL-933714442290",
+            "RL-593F83E40D02",
+            "RL-7920DE250959",
+            "RL-863A6CB03091",
+            "RL-ED5D0E45ED1D",
+            "RL-93F460CBF4EF",
+            "RL-10C9B38C3D49",
+            "RL-5D52B01C69FF",
+            "RL-91F8E7240A9F",
+            "RL-EB202FBA091F",
+            "RL-3282014CADAF",
+            "RL-B9A6C1435684",
+            "RL-F8FFC48342F6",
+            "RL-0305015DBD29"
+        ],
+        "TAG-DIVERSION": [
+            "RL-27B04D4FB6D1",
+            "RL-933714442290"
+        ],
+        "TAG-FIRE-PROTECTION": [
+            "RL-593F83E40D02",
+            "RL-5D52B01C69FF",
+            "RL-F4941E594C11"
+        ],
+        "TAG-FOUNDATION": [
+            "RL-210849B5F789",
+            "RL-7AEF63D75FB4",
+            "RL-93F460CBF4EF",
+            "RL-5797D5CD7420",
+            "RL-B9A6C1435684",
+            "RL-D5FCAA3B9B64",
+            "RL-8D0589964392"
+        ],
+        "TAG-LANDSCAPE": [
+            "RL-593F83E40D02",
+            "RL-A3A6632BA460",
+            "RL-B9A6C1435684"
+        ],
+        "TAG-MEP": [
+            "RL-593F83E40D02",
+            "RL-5D52B01C69FF",
+            "RL-F8FFC48342F6",
+            "RL-8D0589964392"
+        ],
+        "TAG-PIPELINE": [
+            "RL-593F83E40D02",
+            "RL-B9A6C1435684",
+            "RL-F8FFC48342F6"
+        ],
+        "TAG-ROAD": [
+            "RL-593F83E40D02",
+            "RL-5D52B01C69FF",
+            "RL-936C98FC4224",
+            "RL-44294430190D",
+            "RL-1E5B0A0F46CF"
+        ],
+        "TAG-SLOPE": [
+            "RL-593F83E40D02",
+            "RL-A3A6632BA460",
+            "RL-5D52B01C69FF",
+            "RL-B9A6C1435684"
+        ],
+        "TAG-STRUCTURAL-REINFORCEMENT": [
+            "RL-29DE934354DF",
+            "RL-97371408AEC4",
+            "RL-5B78E000E2B4",
+            "RL-0586DF4E622F",
+            "RL-F1CF4F5667AE",
+            "RL-936AED324C9E",
+            "RL-4ADBCA077122",
+            "RL-F4FC1CEBC7A7",
+            "RL-210849B5F789",
+            "RL-BDC690F8A22C",
+            "RL-548D44A0AB68",
+            "RL-5797D5CD7420",
+            "RL-936C98FC4224",
+            "RL-89098D0DF5BA",
+            "RL-44294430190D",
+            "RL-1E5B0A0F46CF",
+            "RL-0427DF191581",
+            "RL-9542238B7E94",
+            "RL-F4941E594C11"
+        ],
+        "TAG-STRUCTURE": [
+            "RL-29DE934354DF",
+            "RL-97371408AEC4",
+            "RL-936AED324C9E",
+            "RL-34A75C7A89EF",
+            "RL-7AEF63D75FB4",
+            "RL-53B42588C58B",
+            "RL-593F83E40D02",
+            "RL-863A6CB03091",
+            "RL-BDC690F8A22C",
+            "RL-93F460CBF4EF",
+            "RL-5D52B01C69FF",
+            "RL-EB202FBA091F",
+            "RL-548D44A0AB68",
+            "RL-5797D5CD7420",
+            "RL-D5FCAA3B9B64",
+            "RL-8D0589964392"
+        ],
+        "TAG-SURVEY": [
+            "RL-B9A6C1435684"
+        ],
+        "TAG-TRAFFIC": [
+            "RL-7920DE250959",
+            "RL-91F8E7240A9F"
+        ],
+        "TAG-WATER": [
+            "RL-B9A6C1435684"
+        ],
+        "TAG-WATERPROOFING": [
+            "RL-A3A6632BA460",
+            "RL-548D44A0AB68",
+            "RL-89098D0DF5BA",
+            "RL-8D0589964392"
+        ]
+    },
+    "rule_ids": [
+        "RL-29DE934354DF",
+        "RL-97371408AEC4",
+        "RL-5B78E000E2B4",
+        "RL-0586DF4E622F",
+        "RL-F1CF4F5667AE",
+        "RL-936AED324C9E",
+        "RL-4ADBCA077122",
+        "RL-C23D10FBC165",
+        "RL-F4FC1CEBC7A7",
+        "RL-210849B5F789",
+        "RL-3A2149F33108",
+        "RL-1A63C4392426",
+        "RL-FCAEF2138533",
+        "RL-DB1B05F205EE",
+        "RL-C1868B288081",
+        "RL-92052D1BC82E",
+        "RL-59F6D398D023",
+        "RL-AEDF22E84A90",
+        "RL-D286809C8304",
+        "RL-58A4DA911FF6",
+        "RL-7F4E739C06C9",
+        "RL-200607DEE69B",
+        "RL-B94437D77438",
+        "RL-14DC171BE899",
+        "RL-DF203C6C8144",
+        "RL-DBE4C12F8C80",
+        "RL-5B30ADE2C155",
+        "RL-D901DE839996",
+        "RL-1B8AEC310C17",
+        "RL-6CC50CD83F9D",
+        "RL-E7B5E39D6545",
+        "RL-692ED2F19475",
+        "RL-34A75C7A89EF",
+        "RL-7AEF63D75FB4",
+        "RL-2EA0110F9C61",
+        "RL-53B42588C58B",
+        "RL-27B04D4FB6D1",
+        "RL-933714442290",
+        "RL-593F83E40D02",
+        "RL-7920DE250959",
+        "RL-863A6CB03091",
+        "RL-BDC690F8A22C",
+        "RL-ED5D0E45ED1D",
+        "RL-93F460CBF4EF",
+        "RL-10C9B38C3D49",
+        "RL-A3A6632BA460",
+        "RL-5D52B01C69FF",
+        "RL-91F8E7240A9F",
+        "RL-EB202FBA091F",
+        "RL-548D44A0AB68",
+        "RL-5797D5CD7420",
+        "RL-936C98FC4224",
+        "RL-89098D0DF5BA",
+        "RL-3282014CADAF",
+        "RL-B9A6C1435684",
+        "RL-D5FCAA3B9B64",
+        "RL-44294430190D",
+        "RL-F8FFC48342F6",
+        "RL-C87FE2DFB76C",
+        "RL-0305015DBD29",
+        "RL-8D0589964392",
+        "RL-1E5B0A0F46CF",
+        "RL-B304E15CBB57",
+        "RL-02480623D28A",
+        "RL-E9055BD407D7",
+        "RL-8D13EC186DE6",
+        "RL-0427DF191581",
+        "RL-9542238B7E94",
+        "RL-F4941E594C11",
+        "RL-8139DB82A494",
+        "RL-9ABB8E67E06A"
+    ],
+    "scene_rule_ids": {
+        "SC-FLOOD-SEASON": [
+            "RL-863A6CB03091",
+            "RL-EB202FBA091F"
+        ],
+        "SC-NIGHT-WORK": [
+            "RL-7920DE250959",
+            "RL-91F8E7240A9F"
+        ],
+        "SC-OLD-BUILDING": [
+            "RL-3282014CADAF",
+            "RL-B9A6C1435684"
+        ],
+        "SC-TEMPORARY-DIVERSION": [
+            "RL-27B04D4FB6D1",
+            "RL-933714442290"
+        ],
+        "SC-WATERFRONT": [
+            "RL-B9A6C1435684"
+        ]
+    },
+    "schema_version": "1.0",
+    "subcategory_rule_ids": {
+        "P02-05": [
+            "RL-593F83E40D02",
+            "RL-A3A6632BA460",
+            "RL-D5FCAA3B9B64",
+            "RL-C87FE2DFB76C",
+            "RL-8D0589964392",
+            "RL-B304E15CBB57",
+            "RL-02480623D28A"
+        ]
+    },
+    "updated_at": "2026-09-23T05:21:52Z"
+}

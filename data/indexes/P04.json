@@ -1,0 +1,78 @@
+{
+    "category_code": "P04",
+    "category_name": "市政管网、排水及防涝工程",
+    "professional_tag_rule_ids": {
+        "TAG-BUILDING": [
+            "RL-A950DE31A0FA",
+            "RL-938F58E30080",
+            "RL-C6B02ECEA02E",
+            "RL-DA3DA514BE27"
+        ],
+        "TAG-FIRE-PROTECTION": [
+            "RL-DA3DA514BE27"
+        ],
+        "TAG-PIPELINE": [
+            "RL-C8C6959D0A99",
+            "RL-815BBEC49862",
+            "RL-3BE017F23120",
+            "RL-E347F0AE9322",
+            "RL-B79D9CA19408",
+            "RL-938F58E30080",
+            "RL-A158C1581019",
+            "RL-F0DC47A3B511",
+            "RL-F0FC1FC740B8",
+            "RL-32A6B2856205"
+        ],
+        "TAG-SLOPE": [
+            "RL-C8C6959D0A99"
+        ],
+        "TAG-SURVEY": [
+            "RL-C6B02ECEA02E",
+            "RL-DA3DA514BE27"
+        ],
+        "TAG-TRENCH": [
+            "RL-A158C1581019"
+        ]
+    },
+    "rule_ids": [
+        "RL-C8C6959D0A99",
+        "RL-815BBEC49862",
+        "RL-3BE017F23120",
+        "RL-E347F0AE9322",
+        "RL-B79D9CA19408",
+        "RL-C7AAE924FC45",
+        "RL-A950DE31A0FA",
+        "RL-938F58E30080",
+        "RL-30C05B4ED827",
+        "RL-A158C1581019",
+        "RL-F0DC47A3B511",
+        "RL-C6B02ECEA02E",
+        "RL-DA3DA514BE27",
+        "RL-F0FC1FC740B8",
+        "RL-32A6B2856205"
+    ],
+    "scene_rule_ids": {
+    },
+    "schema_version": "1.0",
+    "subcategory_rule_ids": {
+        "P04-01": [
+            "RL-938F58E30080"
+        ],
+        "P04-03": [
+            "RL-C8C6959D0A99",
+            "RL-815BBEC49862",
+            "RL-3BE017F23120",
+            "RL-E347F0AE9322",
+            "RL-B79D9CA19408",
+            "RL-A158C1581019",
+            "RL-F0DC47A3B511",
+            "RL-F0FC1FC740B8",
+            "RL-32A6B2856205"
+        ],
+        "P04-07": [
+            "RL-C6B02ECEA02E",
+            "RL-DA3DA514BE27"
+        ]
+    },
+    "updated_at": "2026-09-23T05:21:14Z"
+}

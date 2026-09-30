@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1050</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>820</width>
+    <height>620</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>工程建设项目法规标准批量处理器</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="rootLayout">
+    <item>
+     <widget class="QLabel" name="titleLabel">
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>工程建设项目法规标准批量处理器</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="subtitleLabel">
+      <property name="text">
+       <string>批量输入 PDF、DOCX、TXT、Markdown，自动提取条款并按 P01—P09、59 个子类、专业标签和施工场景分类，同时生成可供后续评分项目导入的运行配置包。</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="fileGroup">
+      <property name="title">
+       <string>待处理文件</string>
+      </property>
+      <layout class="QVBoxLayout" name="fileLayout">
+       <item>
+        <layout class="QHBoxLayout" name="fileButtonLayout">
+         <item>
+          <widget class="QPushButton" name="addFilesButton">
+           <property name="text">
+            <string>添加文件</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="addFolderButton">
+           <property name="text">
+            <string>添加文件夹</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="removeButton">
+           <property name="text">
+            <string>移除选中</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="clearButton">
+           <property name="text">
+            <string>清空</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="fileButtonSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QListWidget" name="fileList">
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::ExtendedSelection</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="settingsGroup">
+      <property name="title">
+       <string>输出与工具配置</string>
+      </property>
+      <layout class="QGridLayout" name="settingsLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="outputLabel">
+         <property name="text">
+          <string>输出目录</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="outputEdit"/>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="outputBrowseButton">
+         <property name="text">
+          <string>选择</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="configLabel">
+         <property name="text">
+          <string>分类规则</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="configEdit"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="configBrowseButton">
+         <property name="text">
+          <string>选择</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="pdfToolLabel">
+         <property name="text">
+          <string>PDF 工具（pdftotext）</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="pdfToolEdit"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="pdfToolBrowseButton">
+         <property name="text">
+          <string>选择</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="sevenZipLabel">
+         <property name="text">
+          <string>DOCX 工具（7z.exe）</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="sevenZipEdit"/>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="sevenZipBrowseButton">
+         <property name="text">
+          <string>选择</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="packageLabel">
+         <property name="text">
+          <string>重构运行包</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="packageEdit">
+         <property name="toolTip">
+          <string>批量处理完成后自动生成目标评分项目可读取的法规运行包，必须位于 D:\Code\Codex 下。</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QPushButton" name="packageBrowseButton">
+         <property name="text">
+          <string>选择</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="actionLayout">
+      <item>
+       <widget class="QPushButton" name="startButton">
+        <property name="text">
+         <string>开始批量处理</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="reviewButton">
+        <property name="text">
+         <string>打开人工复核</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="libraryButton">
+        <property name="text">
+         <string>规则库管理</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="openOutputButton">
+        <property name="text">
+         <string>打开输出目录</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QProgressBar" name="progressBar">
+        <property name="value">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="statusLabel">
+        <property name="text">
+         <string>等待添加文件</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="logEdit">
+      <property name="placeholderText">
+       <string>处理日志将在这里显示。</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

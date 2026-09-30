@@ -1,0 +1,21 @@
+{
+  "schema_version": "dimension-runtime-map.v1",
+  "dimensions": {
+    "施工组织": ["ITEM-01", "ITEM-02", "ITEM-10"],
+    "质量": ["ITEM-06"],
+    "安全": ["ITEM-07"],
+    "进度": ["ITEM-08"],
+    "资源": ["ITEM-03", "ITEM-04", "ITEM-05"],
+    "环境": ["ITEM-09"],
+    "合同招投标": []
+  },
+  "dimension_codes": {
+    "construction": "施工组织",
+    "quality": "质量",
+    "safety": "安全",
+    "schedule": "进度",
+    "resources": "资源",
+    "environment": "环境",
+    "contract": "合同招投标"
+  }
+}

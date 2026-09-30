@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local工程建设项目/regulation-runtime.v1.schema.json",
+  "title": "Inspection and Review System Regulation Runtime Package",
+  "type": "object",
+  "required": ["regulations"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "package_name": { "type": "string" },
+    "regulations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "code", "title", "issued_by", "level", "is_mandatory",
+          "applies_to_items", "applies_to_factors", "keywords",
+          "scope_clause", "requirement_text", "non_comply_action"
+        ],
+        "properties": {
+          "code": { "type": "string", "minLength": 1 },
+          "title": { "type": "string" },
+          "issued_by": { "type": "string" },
+          "level": { "type": "string" },
+          "is_mandatory": { "type": "boolean" },
+          "applies_to_items": { "type": "array", "items": { "type": "string" } },
+          "applies_to_factors": { "type": "array", "items": { "type": "string" } },
+          "keywords": { "type": "array", "items": { "type": "string" } },
+          "scope_clause": { "type": "string" },
+          "requirement_text": { "type": "string" },
+          "non_comply_action": {
+            "type": "string",
+            "enum": ["cap_to_general", "cap_to_negative", "warning_only"]
+          },
+          "standard_code": { "type": "string" },
+          "source_rule_ids": { "type": "array", "items": { "type": "string" } },
+          "source_files": { "type": "array", "items": { "type": "string" } },
+          "category_codes": { "type": "array", "items": { "type": "string", "pattern": "^P0[1-9]$" } },
+          "subcategory_codes": { "type": "array", "items": { "type": "string", "pattern": "^P0[1-9]-[0-9]{2}$" } },
+          "professional_tag_codes": { "type": "array", "items": { "type": "string" } },
+          "scene_codes": { "type": "array", "items": { "type": "string" } },
+          "dimensions": { "type": "array", "items": { "type": "string" } },
+          "review_status": { "type": "string" },
+          "pending_review": { "type": "boolean" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

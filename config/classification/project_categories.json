@@ -1,0 +1,321 @@
+{
+  "schema_version": "project-classification.v1",
+  "taxonomy_id": "engineering-project-categories",
+  "taxonomy_version": "2026.09.22",
+  "name": "工程建设项目九大类分类体系",
+  "description": "用于法规规则路由、项目档案建立和施工组织设计评审配置选择。",
+  "primary_selection": { "min": 1, "max": 1 },
+  "subcategory_selection": { "min": 0, "max": 1 },
+  "professional_tag_selection": { "min": 0, "max": 99 },
+  "scene_selection": { "min": 0, "max": 99 },
+  "dimension_catalog": [
+    { "code": "construction", "name": "施工组织" },
+    { "code": "quality", "name": "质量" },
+    { "code": "safety", "name": "安全" },
+    { "code": "schedule", "name": "进度" },
+    { "code": "resources", "name": "资源" },
+    { "code": "environment", "name": "环境" },
+    { "code": "contract", "name": "合同招投标" }
+  ],
+  "categories": [
+    {
+      "code": "P01",
+      "name": "房屋建筑新建及扩建工程",
+      "short_name": "房建新建",
+      "description": "从无到有建设能够投入使用的建筑物，或增加新的楼栋、楼层和建筑面积。",
+      "selection_hint": "主要建设对象是完整建筑物时选择 P01。",
+      "include_keywords": ["房屋建筑", "住宅", "办公楼", "综合楼", "教学楼", "宿舍", "医院", "厂房", "仓库", "主体结构", "地基基础", "建筑屋面"],
+      "exclude_keywords": ["既有建筑", "修缮", "改造", "装修改造", "公路", "河道", "农田"],
+      "boundary_rules": [
+        { "with_category": "P02", "rule": "新建完整建筑选择 P01，既有建筑装修、修缮和功能改造选择 P02。", "preferred_category": "P01" },
+        { "with_category": "P08", "rule": "单一建筑占主导选择 P01，多专业场区整体提升且无单一主轴才选择 P08。", "preferred_category": "P01" }
+      ],
+      "subcategories": [
+        { "code": "P01-01", "name": "住宅及居住建筑", "include_keywords": ["住宅", "居住建筑", "住宅楼"] },
+        { "code": "P01-02", "name": "学校及教育建筑", "include_keywords": ["学校", "教学楼", "教育建筑"] },
+        { "code": "P01-03", "name": "医院及医疗建筑", "include_keywords": ["医院", "医疗建筑", "门诊楼"] },
+        { "code": "P01-04", "name": "办公及公共建筑", "include_keywords": ["办公楼", "公共建筑", "综合楼"] },
+        { "code": "P01-05", "name": "工业厂房及园区建筑", "include_keywords": ["厂房", "工业建筑", "园区建筑"] },
+        { "code": "P01-06", "name": "场馆及其他功能建筑", "include_keywords": ["体育馆", "场馆", "报告厅", "功能建筑"] }
+      ],
+      "professional_tag_codes": ["TAG-FOUNDATION", "TAG-STRUCTURE", "TAG-WATERPROOFING", "TAG-FIRE-PROTECTION", "TAG-MEP"],
+      "scene_codes": ["SC-SCHOOL", "SC-HOSPITAL", "SC-IN-USE-FACILITY", "SC-CONFINED-SITE"],
+      "package_refs": { "regulation_package": "REG-P01", "keyword_package": "KW-P01", "scoring_package": "SCORE-BUILDING" },
+      "default_dimensions": ["construction", "quality", "safety", "schedule", "resources", "environment"],
+      "special_strategy_codes": ["STR-BUILDING-INTERFACE", "STR-IN-USE-SEGMENTATION"]
+    },
+    {
+      "code": "P02",
+      "name": "建筑装饰、修缮及既有建筑改造工程",
+      "short_name": "既有建筑改造",
+      "description": "对既有建筑进行装修、维修、翻新、拆改、加固或功能提升。",
+      "selection_hint": "主要工作是改造已有房屋而不是新建完整建筑时选择 P02。",
+      "include_keywords": ["既有建筑", "修缮", "改造", "装修改造", "装饰装修", "翻新", "拆除", "加固", "外立面", "屋面维修", "功能提升", "成品保护"],
+      "exclude_keywords": ["新建完整建筑", "高速公路", "农田"],
+      "boundary_rules": [
+        { "with_category": "P01", "rule": "新建建筑中的普通装修属于 P01 的专业组成，单独发包的既有建筑装修和修缮选择 P02。", "preferred_category": "P02" },
+        { "with_category": "P08", "rule": "既有建筑改造占主导选择 P02，多专业场区整体提升且无单一主轴才选择 P08。", "preferred_category": "P02" }
+      ],
+      "subcategories": [
+        { "code": "P02-01", "name": "老旧小区综合改造", "include_keywords": ["老旧小区", "小区改造"] },
+        { "code": "P02-02", "name": "学校及校园建筑改造", "include_keywords": ["学校改造", "校园改造", "宿舍改造"] },
+        { "code": "P02-03", "name": "医院及医疗建筑改造", "include_keywords": ["医院改造", "医疗改造", "病房改造"] },
+        { "code": "P02-04", "name": "办公及公共建筑改造", "include_keywords": ["办公改造", "公共建筑改造"] },
+        { "code": "P02-05", "name": "独立室内装饰装修", "include_keywords": ["室内装修", "装饰装修", "精装修"] },
+        { "code": "P02-06", "name": "商业、酒店及展陈空间装修", "include_keywords": ["商业装修", "酒店装修", "展陈"] },
+        { "code": "P02-07", "name": "工业厂房及园区建筑改造", "include_keywords": ["厂房改造", "园区改造"] },
+        { "code": "P02-08", "name": "外立面、屋面及专项修缮", "include_keywords": ["外立面", "屋面维修", "专项修缮"] }
+      ],
+      "professional_tag_codes": ["TAG-DEMOLITION", "TAG-DECORATION", "TAG-STRUCTURAL-REINFORCEMENT", "TAG-FINISHED-PROTECTION", "TAG-FIRE-SWITCHOVER"],
+      "scene_codes": ["SC-OLD-BUILDING", "SC-SCHOOL", "SC-HOSPITAL", "SC-IN-USE-FACILITY", "SC-CONFINED-SITE"],
+      "package_refs": { "regulation_package": "REG-P02", "keyword_package": "KW-P02", "scoring_package": "SCORE-RENOVATION" },
+      "default_dimensions": ["construction", "quality", "safety", "schedule", "environment"],
+      "special_strategy_codes": ["STR-IN-USE-SEGMENTATION", "STR-DEMOLITION-SAFETY", "STR-FINISHED-PROTECTION"]
+    },
+    {
+      "code": "P03",
+      "name": "市政道路、桥梁及交通工程",
+      "short_name": "市政道路交通",
+      "description": "建设或改造城市道路、桥梁、人行系统和交通配套设施。",
+      "selection_hint": "核心目标是城市道路通行和交通设施时选择 P03。",
+      "include_keywords": ["城市道路", "市政道路", "城市桥梁", "人行道", "慢行系统", "交通导改", "交通标志", "交通标线", "道路照明", "信号灯", "停车场", "广场"],
+      "exclude_keywords": ["高速公路", "国道", "省道", "县道", "乡道", "农田道路", "管网为主"],
+      "boundary_rules": [
+        { "with_category": "P04", "rule": "道路通行和路面工程占主导选择 P03，管道、井室和系统检测占主导选择 P04。", "preferred_category": "P03" },
+        { "with_category": "P09", "rule": "城市道路和市政交通配套选择 P03，按路线和公路技术等级实施选择 P09。", "preferred_category": "P03" }
+      ],
+      "subcategories": [
+        { "code": "P03-01", "name": "城市道路新建", "include_keywords": ["道路新建", "城市道路新建"] },
+        { "code": "P03-02", "name": "城市道路改造", "include_keywords": ["道路改造", "道路拓宽"] },
+        { "code": "P03-03", "name": "桥梁及涵洞", "include_keywords": ["桥梁", "涵洞", "桥涵"] },
+        { "code": "P03-04", "name": "交通安全及智能交通", "include_keywords": ["交通安全", "智能交通", "信号灯", "监控"] },
+        { "code": "P03-05", "name": "道路照明及附属设施", "include_keywords": ["道路照明", "路灯", "附属设施"] },
+        { "code": "P03-06", "name": "广场、停车场及慢行系统", "include_keywords": ["广场", "停车场", "慢行系统"] }
+      ],
+      "professional_tag_codes": ["TAG-ROAD", "TAG-BRIDGE", "TAG-TRAFFIC", "TAG-ROAD-LIGHTING", "TAG-SURVEY"],
+      "scene_codes": ["SC-TRAFFIC-DIVERSION", "SC-URBAN-SENSITIVE", "SC-NIGHT-WORK"],
+      "package_refs": { "regulation_package": "REG-P03", "keyword_package": "KW-P03", "scoring_package": "SCORE-MUNICIPAL-ROAD" },
+      "default_dimensions": ["construction", "quality", "safety", "schedule", "environment"],
+      "special_strategy_codes": ["STR-TRAFFIC-DIVERSION", "STR-ROAD-QUALITY"]
+    },
+    {
+      "code": "P04",
+      "name": "市政管网、排水及防涝工程",
+      "short_name": "市政管网",
+      "description": "建设城市管道、井室、泵站和排水防涝设施。",
+      "selection_hint": "核心目标是铺设管道、建设井室、泵站或解决城市积水时选择 P04。",
+      "include_keywords": ["雨污水", "污水管网", "给水管网", "再生水", "燃气管道", "热力管道", "电力排管", "通信排管", "综合管廊", "检查井", "井室", "顶管", "工作井", "接收井", "排水防涝", "污水泵站", "闭水试验", "CCTV检测"],
+      "exclude_keywords": ["农田灌排", "河道治理", "堤防", "水库"],
+      "boundary_rules": [
+        { "with_category": "P03", "rule": "道路破除和恢复只是管网配套工作时选择 P04，道路本体占主导时选择 P03。", "preferred_category": "P04" },
+        { "with_category": "P05", "rule": "城市地下管网和城市排水选择 P04，河道、水库、堤防和水流控制选择 P05。", "preferred_category": "P04" }
+      ],
+      "subcategories": [
+        { "code": "P04-01", "name": "雨污水管网", "include_keywords": ["雨水管", "污水管", "雨污分流"] },
+        { "code": "P04-02", "name": "给水及再生水管网", "include_keywords": ["给水管", "再生水", "供水管网"] },
+        { "code": "P04-03", "name": "燃气及热力管网", "include_keywords": ["燃气", "热力管道"] },
+        { "code": "P04-04", "name": "电力及通信排管", "include_keywords": ["电力排管", "通信排管"] },
+        { "code": "P04-05", "name": "排水防涝及泵站", "include_keywords": ["排水防涝", "泵站", "积水"] },
+        { "code": "P04-06", "name": "顶管及非开挖工程", "include_keywords": ["顶管", "工作井", "接收井", "非开挖"] },
+        { "code": "P04-07", "name": "综合管廊及多管线工程", "include_keywords": ["综合管廊", "多管线", "管线综合"] }
+      ],
+      "professional_tag_codes": ["TAG-PIPELINE", "TAG-TRENCH", "TAG-TRENCHLESS", "TAG-ROAD-RESTORATION", "TAG-CONFINED-SPACE", "TAG-SURVEY"],
+      "scene_codes": ["SC-DEEP-TRENCH", "SC-TRAFFIC-DIVERSION", "SC-EXISTING-UTILITY", "SC-CONFINED-SPACE", "SC-FLOOD-SEASON"],
+      "package_refs": { "regulation_package": "REG-P04", "keyword_package": "KW-P04", "scoring_package": "SCORE-MUNICIPAL-PIPE-NETWORK" },
+      "default_dimensions": ["construction", "quality", "safety", "environment"],
+      "special_strategy_codes": ["STR-TRENCH-SAFETY", "STR-PIPELINE-TESTING", "STR-EXISTING-UTILITY-PROTECTION"]
+    },
+    {
+      "code": "P05",
+      "name": "水利工程",
+      "short_name": "水利",
+      "description": "治理河道、水库、堤防并通过工程措施控制水流。",
+      "selection_hint": "工程对象是河道、水库、堤防、水闸或大型水流控制设施时选择 P05。",
+      "include_keywords": ["水利工程", "河道治理", "河道整治", "清淤", "疏浚", "堤防", "护岸", "护坡", "水库", "塘坝", "水闸", "堰坝", "施工导流", "围堰", "防汛度汛", "水工混凝土", "防渗", "引水", "输水"],
+      "exclude_keywords": ["城市管网", "雨污水管网", "农田灌溉", "田间道路"],
+      "boundary_rules": [
+        { "with_category": "P06", "rule": "服务河流、水库和防洪水流控制选择 P05，服务耕地灌排和农业生产选择 P06。", "preferred_category": "P05" },
+        { "with_category": "P04", "rule": "城市地下排水管网选择 P04，天然河道和大型水体治理选择 P05。", "preferred_category": "P05" }
+      ],
+      "subcategories": [
+        { "code": "P05-01", "name": "河道治理及清淤", "include_keywords": ["河道治理", "清淤", "疏浚"] },
+        { "code": "P05-02", "name": "堤防、护岸及护坡", "include_keywords": ["堤防", "护岸", "护坡"] },
+        { "code": "P05-03", "name": "水闸、堰坝及涵管", "include_keywords": ["水闸", "堰坝", "涵管"] },
+        { "code": "P05-04", "name": "泵站及水工建筑物", "include_keywords": ["水利泵站", "水工建筑物"] },
+        { "code": "P05-05", "name": "水库、塘坝及蓄水工程", "include_keywords": ["水库", "塘坝", "蓄水"] },
+        { "code": "P05-06", "name": "灌排及引调水工程", "include_keywords": ["灌排", "引水", "输水", "调水"] }
+      ],
+      "professional_tag_codes": ["TAG-WATER", "TAG-DYKE", "TAG-DIVERSION", "TAG-COFFERDAM", "TAG-HYDRAULIC-CONCRETE"],
+      "scene_codes": ["SC-FLOOD-SEASON", "SC-WATERFRONT", "SC-TEMPORARY-DIVERSION", "SC-CONFINED-SPACE"],
+      "package_refs": { "regulation_package": "REG-P05", "keyword_package": "KW-P05", "scoring_package": "SCORE-WATER-CONSERVANCY" },
+      "default_dimensions": ["construction", "quality", "safety", "schedule", "environment"],
+      "special_strategy_codes": ["STR-FLOOD-CONTROL", "STR-DIVERSION-COFFERDAM"]
+    },
+    {
+      "code": "P06",
+      "name": "高标准农田及土地整治工程",
+      "short_name": "高标准农田",
+      "description": "改善农田、灌排、田间道路和农业生产条件。",
+      "selection_hint": "主要服务耕地、农业生产和农田基础设施时选择 P06。",
+      "include_keywords": ["高标准农田", "土地整治", "农田", "耕地", "土地平整", "表土", "田间道路", "灌溉渠", "排水沟", "渠系", "地力提升", "土壤改良", "机井", "节水灌溉", "农田水利"],
+      "exclude_keywords": ["城市道路", "城市管网", "河道治理", "村庄人居环境"],
+      "boundary_rules": [
+        { "with_category": "P05", "rule": "农田灌排服务农业生产时选择 P06，河道水库和防洪水流控制选择 P05。", "preferred_category": "P06" },
+        { "with_category": "P07", "rule": "改善耕地生产条件选择 P06，改善村庄生活环境选择 P07。", "preferred_category": "P06" }
+      ],
+      "subcategories": [
+        { "code": "P06-01", "name": "土地平整及土壤改良", "include_keywords": ["土地平整", "土壤改良", "表土"] },
+        { "code": "P06-02", "name": "灌溉与排水", "include_keywords": ["灌溉", "排水沟", "农田排水"] },
+        { "code": "P06-03", "name": "田间道路", "include_keywords": ["田间道路", "机耕路"] },
+        { "code": "P06-04", "name": "桥、涵、闸及渠系建筑物", "include_keywords": ["农桥", "农田涵管", "渠系建筑物"] },
+        { "code": "P06-05", "name": "泵站、机井及节水灌溉", "include_keywords": ["泵站", "机井", "节水灌溉"] },
+        { "code": "P06-06", "name": "塘坝及水源工程", "include_keywords": ["塘坝", "水源工程"] },
+        { "code": "P06-07", "name": "输配电工程", "include_keywords": ["输配电", "农田供电"] },
+        { "code": "P06-08", "name": "地力提升工程", "include_keywords": ["地力提升", "地力培肥"] }
+      ],
+      "professional_tag_codes": ["TAG-FARMLAND", "TAG-IRRIGATION", "TAG-FIELD-ROAD", "TAG-SOIL", "TAG-SURVEY"],
+      "scene_codes": ["SC-FARMING-SEASON", "SC-FLOOD-SEASON", "SC-MULTI-SITE", "SC-RURAL-COORDINATION"],
+      "package_refs": { "regulation_package": "REG-P06", "keyword_package": "KW-P06", "scoring_package": "SCORE-HIGH-STANDARD-FARMLAND" },
+      "default_dimensions": ["construction", "quality", "safety", "schedule", "resources", "environment"],
+      "special_strategy_codes": ["STR-FARMING-SEASON", "STR-MULTI-SITE-ORGANIZATION"]
+    },
+    {
+      "code": "P07",
+      "name": "乡村建设及农村人居环境整治工程",
+      "short_name": "乡村建设",
+      "description": "综合改善村庄生活环境、公共设施和多村点基础设施。",
+      "selection_hint": "以村庄生活环境和公共设施综合改善为主时选择 P07。",
+      "include_keywords": ["美丽乡村", "和美乡村", "村庄", "自然村", "农村人居环境", "农村污水", "农村公厕", "村道", "村庄道路", "村庄公共空间", "党群服务中心", "多村点"],
+      "exclude_keywords": ["高标准农田", "单一管网", "单一道路", "单栋房屋"],
+      "boundary_rules": [
+        { "with_category": "P04", "rule": "单一管网或排水系统选择 P04，多村点综合改善村庄环境选择 P07。", "preferred_category": "P07" },
+        { "with_category": "P08", "rule": "多村庄人居环境改善选择 P07，同一院区或园区综合提升选择 P08。", "preferred_category": "P07" }
+      ],
+      "subcategories": [
+        { "code": "P07-01", "name": "美丽乡村及和美乡村建设", "include_keywords": ["美丽乡村", "和美乡村"] },
+        { "code": "P07-02", "name": "自然村人居环境整治", "include_keywords": ["自然村", "人居环境整治"] },
+        { "code": "P07-03", "name": "村庄基础设施提升", "include_keywords": ["村庄基础设施", "基础设施提升"] },
+        { "code": "P07-04", "name": "农村污水及卫生设施", "include_keywords": ["农村污水", "农村公厕", "卫生设施"] },
+        { "code": "P07-05", "name": "村庄公共空间及景观改造", "include_keywords": ["公共空间", "村庄景观"] },
+        { "code": "P07-06", "name": "村级公共建筑及配套改造", "include_keywords": ["党群服务中心", "村级公共建筑"] }
+      ],
+      "professional_tag_codes": ["TAG-VILLAGE-ROAD", "TAG-RURAL-SEWER", "TAG-LANDSCAPE", "TAG-PUBLIC-SPACE", "TAG-RURAL-COORDINATION"],
+      "scene_codes": ["SC-MULTI-SITE", "SC-FARMING-SEASON", "SC-RURAL-COORDINATION", "SC-IN-USE-FACILITY"],
+      "package_refs": { "regulation_package": "REG-P07", "keyword_package": "KW-P07", "scoring_package": "SCORE-RURAL-CONSTRUCTION" },
+      "default_dimensions": ["construction", "quality", "safety", "schedule", "environment"],
+      "special_strategy_codes": ["STR-MULTI-SITE-ORGANIZATION", "STR-RURAL-COORDINATION"]
+    },
+    {
+      "code": "P08",
+      "name": "综合设施提升工程",
+      "short_name": "综合设施提升",
+      "description": "在同一院区、园区或场区内综合提升多类设施，且无单一工程类型占主导。",
+      "selection_hint": "只有多专业共同服务整体提升且没有单一技术主轴时选择 P08。",
+      "include_keywords": ["综合提升", "院区提升", "园区提升", "场区提升", "校园综合", "医院院区", "福利机构院区", "产业园", "办公园区", "生产基地", "分区施工", "系统切换", "整体移交"],
+      "exclude_keywords": ["单一建筑", "单一道路", "单一管网", "单一水利"],
+      "boundary_rules": [
+        { "with_category": "P01", "rule": "主体建筑占主导选择 P01，多专业场区整体提升才选择 P08。", "preferred_category": "P08" },
+        { "with_category": "P03", "rule": "道路占主导选择 P03，建筑、道路、管网和配套设施共同提升时选择 P08。", "preferred_category": "P08" }
+      ],
+      "subcategories": [
+        { "code": "P08-01", "name": "校园综合设施提升", "include_keywords": ["校园综合提升", "校园设施提升"] },
+        { "code": "P08-02", "name": "医院及福利机构院区提升", "include_keywords": ["医院院区", "福利机构院区"] },
+        { "code": "P08-03", "name": "产业园及办公园区综合提升", "include_keywords": ["产业园", "办公园区"] },
+        { "code": "P08-04", "name": "交通场站及生产基地提升", "include_keywords": ["交通场站", "生产基地"] },
+        { "code": "P08-05", "name": "公共服务设施综合提升", "include_keywords": ["公共服务设施", "公共设施提升"] },
+        { "code": "P08-06", "name": "其他多专业场区综合提升", "include_keywords": ["多专业场区", "场区综合提升"] }
+      ],
+      "professional_tag_codes": ["TAG-BUILDING", "TAG-ROAD", "TAG-PIPELINE", "TAG-LANDSCAPE", "TAG-SYSTEM-SWITCHOVER"],
+      "scene_codes": ["SC-SCHOOL", "SC-HOSPITAL", "SC-IN-USE-FACILITY", "SC-MULTI-SITE", "SC-CONFINED-SITE"],
+      "package_refs": { "regulation_package": "REG-P08", "keyword_package": "KW-P08", "scoring_package": "SCORE-INTEGRATED-FACILITIES" },
+      "default_dimensions": ["construction", "quality", "safety", "schedule", "resources", "environment"],
+      "special_strategy_codes": ["STR-IN-USE-SEGMENTATION", "STR-SYSTEM-SWITCHOVER", "STR-MULTI-DISCIPLINE-INTERFACE"]
+    },
+    {
+      "code": "P09",
+      "name": "公路工程",
+      "short_name": "公路",
+      "description": "建设、改造或养护承担区域交通和干线运输功能的公路。",
+      "selection_hint": "按路线、公路技术等级、桥隧和交安体系组织施工时选择 P09。",
+      "include_keywords": ["高速公路", "国道", "省道", "县道", "乡道", "农村公路", "公路工程", "公路桥", "公路隧道", "路线", "路基", "路面", "边坡", "公路养护", "施工保通", "交安工程"],
+      "exclude_keywords": ["城市道路", "市政道路", "农田道路"],
+      "boundary_rules": [
+        { "with_category": "P03", "rule": "城市街道和市政交通配套选择 P03，国省县乡公路、桥隧、养护和交安选择 P09。", "preferred_category": "P09" },
+        { "with_category": "P06", "rule": "服务农田生产的田间道路选择 P06，承担区域交通功能的公路选择 P09。", "preferred_category": "P09" }
+      ],
+      "subcategories": [
+        { "code": "P09-01", "name": "高速公路及互通工程", "include_keywords": ["高速公路", "互通", "连接线"] },
+        { "code": "P09-02", "name": "国省干线公路", "include_keywords": ["国道", "省道", "干线公路"] },
+        { "code": "P09-03", "name": "县乡及农村公路", "include_keywords": ["县道", "乡道", "农村公路"] },
+        { "code": "P09-04", "name": "公路桥涵及隧道工程", "include_keywords": ["公路桥", "公路涵洞", "公路隧道"] },
+        { "code": "P09-05", "name": "公路养护及改造工程", "include_keywords": ["公路养护", "公路改造"] },
+        { "code": "P09-06", "name": "交通安全及公路机电工程", "include_keywords": ["交安工程", "公路机电", "交通安全设施"] }
+      ],
+      "professional_tag_codes": ["TAG-ROAD", "TAG-BRIDGE", "TAG-TUNNEL", "TAG-TRAFFIC", "TAG-SLOPE", "TAG-SURVEY"],
+      "scene_codes": ["SC-TRAFFIC-DIVERSION", "SC-CONSTRUCTION-TRAFFIC", "SC-FLOOD-SEASON", "SC-NIGHT-WORK"],
+      "package_refs": { "regulation_package": "REG-P09", "keyword_package": "KW-P09", "scoring_package": "SCORE-HIGHWAY" },
+      "default_dimensions": ["construction", "quality", "safety", "schedule", "resources", "environment"],
+      "special_strategy_codes": ["STR-CONSTRUCTION-TRAFFIC", "STR-ROAD-QUALITY", "STR-SLOPE-SAFETY"]
+    }
+  ],
+  "professional_tags": [
+    { "code": "TAG-BUILDING", "name": "建筑施工", "keywords": ["建筑", "主体结构", "建筑物"] },
+    { "code": "TAG-FOUNDATION", "name": "地基基础", "keywords": ["地基", "基础", "基坑"] },
+    { "code": "TAG-STRUCTURE", "name": "主体结构", "keywords": ["主体结构", "钢结构", "混凝土"] },
+    { "code": "TAG-WATERPROOFING", "name": "防水工程", "keywords": ["防水", "屋面", "防渗"] },
+    { "code": "TAG-FIRE-PROTECTION", "name": "消防工程", "keywords": ["消防", "防火", "灭火"] },
+    { "code": "TAG-MEP", "name": "机电安装", "keywords": ["给排水", "电气", "暖通", "机电"] },
+    { "code": "TAG-DEMOLITION", "name": "拆除工程", "keywords": ["拆除", "破除", "清运"] },
+    { "code": "TAG-DECORATION", "name": "装饰装修", "keywords": ["装修", "装饰", "精装修"] },
+    { "code": "TAG-STRUCTURAL-REINFORCEMENT", "name": "结构加固", "keywords": ["加固", "补强", "结构改造"] },
+    { "code": "TAG-FINISHED-PROTECTION", "name": "成品保护", "keywords": ["成品保护", "保护隔离"] },
+    { "code": "TAG-FIRE-SWITCHOVER", "name": "消防系统切换", "keywords": ["消防切换", "系统切换"] },
+    { "code": "TAG-ROAD", "name": "道路工程", "keywords": ["道路", "路基", "路面"] },
+    { "code": "TAG-BRIDGE", "name": "桥梁工程", "keywords": ["桥梁", "桥涵"] },
+    { "code": "TAG-TUNNEL", "name": "隧道工程", "keywords": ["隧道"] },
+    { "code": "TAG-TRAFFIC", "name": "交通工程", "keywords": ["交通导改", "交通标志", "交通标线", "交安"] },
+    { "code": "TAG-ROAD-LIGHTING", "name": "道路照明", "keywords": ["道路照明", "路灯"] },
+    { "code": "TAG-PIPELINE", "name": "管网工程", "keywords": ["管道", "管网", "井室"] },
+    { "code": "TAG-TRENCH", "name": "沟槽施工", "keywords": ["沟槽", "开挖", "支护", "回填"] },
+    { "code": "TAG-TRENCHLESS", "name": "非开挖施工", "keywords": ["顶管", "非开挖", "工作井", "接收井"] },
+    { "code": "TAG-ROAD-RESTORATION", "name": "道路恢复", "keywords": ["道路恢复", "路面恢复", "破除恢复"] },
+    { "code": "TAG-CONFINED-SPACE", "name": "有限空间", "keywords": ["有限空间", "井室作业"] },
+    { "code": "TAG-SURVEY", "name": "工程测量", "keywords": ["测量", "放样", "复测", "控制点"] },
+    { "code": "TAG-WATER", "name": "水利水工", "keywords": ["水利", "河道", "水库", "水闸"] },
+    { "code": "TAG-DYKE", "name": "堤防护岸", "keywords": ["堤防", "护岸", "护坡"] },
+    { "code": "TAG-DIVERSION", "name": "施工导流", "keywords": ["导流", "围堰", "度汛"] },
+    { "code": "TAG-COFFERDAM", "name": "围堰", "keywords": ["围堰"] },
+    { "code": "TAG-HYDRAULIC-CONCRETE", "name": "水工混凝土", "keywords": ["水工混凝土", "防渗混凝土"] },
+    { "code": "TAG-FARMLAND", "name": "农田整治", "keywords": ["农田", "耕地", "土地平整"] },
+    { "code": "TAG-IRRIGATION", "name": "农田灌排", "keywords": ["灌溉", "灌排", "渠系"] },
+    { "code": "TAG-FIELD-ROAD", "name": "田间道路", "keywords": ["田间道路", "机耕路"] },
+    { "code": "TAG-SOIL", "name": "土壤和地力", "keywords": ["土壤改良", "地力提升", "表土"] },
+    { "code": "TAG-VILLAGE-ROAD", "name": "村庄道路", "keywords": ["村道", "村庄道路"] },
+    { "code": "TAG-RURAL-SEWER", "name": "农村污水", "keywords": ["农村污水", "污水处理"] },
+    { "code": "TAG-LANDSCAPE", "name": "景观绿化", "keywords": ["景观", "绿化"] },
+    { "code": "TAG-PUBLIC-SPACE", "name": "公共空间", "keywords": ["公共空间", "广场", "村庄环境"] },
+    { "code": "TAG-RURAL-COORDINATION", "name": "农村协调", "keywords": ["村民协调", "群众协调", "农忙"] },
+    { "code": "TAG-SYSTEM-SWITCHOVER", "name": "系统切换", "keywords": ["系统切换", "接驳", "停水停电"] },
+    { "code": "TAG-SLOPE", "name": "边坡工程", "keywords": ["边坡", "高边坡", "防护"] }
+  ],
+  "scenes": [
+    { "code": "SC-SCHOOL", "name": "校园施工", "keywords": ["学校", "校园", "教学楼"] },
+    { "code": "SC-HOSPITAL", "name": "医院或医疗机构施工", "keywords": ["医院", "医疗", "病房"] },
+    { "code": "SC-OLD-BUILDING", "name": "老旧建筑施工", "keywords": ["老旧建筑", "老旧小区", "既有建筑"] },
+    { "code": "SC-IN-USE-FACILITY", "name": "在用设施施工", "keywords": ["在用", "不停业", "不停课", "正常运营"] },
+    { "code": "SC-CONFINED-SITE", "name": "狭窄或受限场地", "keywords": ["狭窄场地", "受限场地", "场地受限"] },
+    { "code": "SC-TRAFFIC-DIVERSION", "name": "交通导改", "keywords": ["交通导改", "交通疏解", "保通"] },
+    { "code": "SC-CONSTRUCTION-TRAFFIC", "name": "公路施工保通", "keywords": ["施工保通", "临时便道", "交通组织"] },
+    { "code": "SC-DEEP-TRENCH", "name": "深沟槽", "keywords": ["深沟槽", "深基坑", "沟槽支护"] },
+    { "code": "SC-EXISTING-UTILITY", "name": "既有管线保护", "keywords": ["既有管线", "管线保护", "地下管线"] },
+    { "code": "SC-CONFINED-SPACE", "name": "有限空间作业", "keywords": ["有限空间", "井室", "窨井"] },
+    { "code": "SC-FLOOD-SEASON", "name": "汛期施工", "keywords": ["汛期", "防汛", "度汛", "雨季"] },
+    { "code": "SC-WATERFRONT", "name": "临水施工", "keywords": ["临水", "河道", "水上作业"] },
+    { "code": "SC-TEMPORARY-DIVERSION", "name": "施工导流", "keywords": ["施工导流", "围堰", "导流"] },
+    { "code": "SC-FARMING-SEASON", "name": "农忙期施工", "keywords": ["农忙", "农业生产", "抢种抢收"] },
+    { "code": "SC-MULTI-SITE", "name": "多点或多片区施工", "keywords": ["多村点", "多片区", "多作业面"] },
+    { "code": "SC-RURAL-COORDINATION", "name": "农村群众协调", "keywords": ["村民", "群众协调", "农户"] },
+    { "code": "SC-URBAN-SENSITIVE", "name": "城市敏感环境", "keywords": ["居民区", "学校周边", "医院周边", "低扰民"] },
+    { "code": "SC-NIGHT-WORK", "name": "夜间施工", "keywords": ["夜间施工", "夜班", "夜间作业"] }
+  ]
+}

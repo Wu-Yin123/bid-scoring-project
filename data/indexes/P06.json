@@ -1,0 +1,198 @@
+{
+    "category_code": "P06",
+    "category_name": "高标准农田及土地整治工程",
+    "professional_tag_rule_ids": {
+        "TAG-BUILDING": [
+            "RL-EFBF753668E3",
+            "RL-593F83E40D02",
+            "RL-5D52B01C69FF",
+            "RL-D1AD4868A329",
+            "RL-BA45E252C64E",
+            "RL-AD25FBEA47BC",
+            "RL-389C5F311C0B",
+            "RL-A8B189D6B6A7",
+            "RL-FF8723B30AB1",
+            "RL-B039BBB17A23"
+        ],
+        "TAG-DECORATION": [
+            "RL-593F83E40D02"
+        ],
+        "TAG-DEMOLITION": [
+            "RL-593F83E40D02",
+            "RL-5D52B01C69FF"
+        ],
+        "TAG-FARMLAND": [
+            "RL-2B252FCF5B5D",
+            "RL-C9E80CACB976",
+            "RL-C1435EDAEA06",
+            "RL-BA45E252C64E",
+            "RL-C32D8D8B00BB",
+            "RL-FF8723B30AB1",
+            "RL-B039BBB17A23"
+        ],
+        "TAG-FIELD-ROAD": [
+            "RL-C1435EDAEA06",
+            "RL-BA45E252C64E",
+            "RL-E3EAA6CFA175",
+            "RL-B039BBB17A23"
+        ],
+        "TAG-FIRE-PROTECTION": [
+            "RL-593F83E40D02",
+            "RL-5D52B01C69FF",
+            "RL-29AB010B69EC",
+            "RL-FB096D3B82F7"
+        ],
+        "TAG-FOUNDATION": [
+            "RL-A7DA5DDB5EDA",
+            "RL-BA45E252C64E",
+            "RL-A8B189D6B6A7",
+            "RL-B039BBB17A23"
+        ],
+        "TAG-IRRIGATION": [
+            "RL-C1435EDAEA06",
+            "RL-BA45E252C64E",
+            "RL-389C5F311C0B",
+            "RL-A8B189D6B6A7",
+            "RL-FF8723B30AB1",
+            "RL-B039BBB17A23"
+        ],
+        "TAG-LANDSCAPE": [
+            "RL-593F83E40D02"
+        ],
+        "TAG-MEP": [
+            "RL-593F83E40D02",
+            "RL-5D52B01C69FF"
+        ],
+        "TAG-PIPELINE": [
+            "RL-026434F5F66C",
+            "RL-EFBF753668E3",
+            "RL-593F83E40D02"
+        ],
+        "TAG-ROAD": [
+            "RL-593F83E40D02",
+            "RL-5D52B01C69FF",
+            "RL-C1435EDAEA06",
+            "RL-BA45E252C64E",
+            "RL-AD25FBEA47BC",
+            "RL-E3EAA6CFA175",
+            "RL-B039BBB17A23"
+        ],
+        "TAG-SLOPE": [
+            "RL-A7DA5DDB5EDA",
+            "RL-026434F5F66C",
+            "RL-593F83E40D02",
+            "RL-5D52B01C69FF",
+            "RL-C1435EDAEA06",
+            "RL-BA45E252C64E",
+            "RL-FF8723B30AB1",
+            "RL-B039BBB17A23"
+        ],
+        "TAG-SOIL": [
+            "RL-C1435EDAEA06",
+            "RL-BA45E252C64E",
+            "RL-7975CB76ED8D",
+            "RL-02F117DF7E1F",
+            "RL-FF8723B30AB1",
+            "RL-B039BBB17A23"
+        ],
+        "TAG-STRUCTURE": [
+            "RL-026434F5F66C",
+            "RL-593F83E40D02",
+            "RL-5D52B01C69FF",
+            "RL-BA45E252C64E",
+            "RL-E3EAA6CFA175",
+            "RL-B039BBB17A23"
+        ],
+        "TAG-TRENCH": [
+            "RL-7975CB76ED8D",
+            "RL-389C5F311C0B",
+            "RL-A8B189D6B6A7"
+        ],
+        "TAG-WATER": [
+            "RL-A8B189D6B6A7"
+        ],
+        "TAG-WATERPROOFING": [
+            "RL-A7DA5DDB5EDA",
+            "RL-026434F5F66C"
+        ]
+    },
+    "rule_ids": [
+        "RL-A7DA5DDB5EDA",
+        "RL-026434F5F66C",
+        "RL-2B252FCF5B5D",
+        "RL-484433EE205D",
+        "RL-EFBF753668E3",
+        "RL-C9E80CACB976",
+        "RL-593F83E40D02",
+        "RL-5D52B01C69FF",
+        "RL-D1AD4868A329",
+        "RL-29AB010B69EC",
+        "RL-FB096D3B82F7",
+        "RL-CCD02AF5D9A3",
+        "RL-52B69293B11B",
+        "RL-C1435EDAEA06",
+        "RL-BA45E252C64E",
+        "RL-7975CB76ED8D",
+        "RL-AD25FBEA47BC",
+        "RL-389C5F311C0B",
+        "RL-A8B189D6B6A7",
+        "RL-E3EAA6CFA175",
+        "RL-C32D8D8B00BB",
+        "RL-02F117DF7E1F",
+        "RL-FF8723B30AB1",
+        "RL-B039BBB17A23"
+    ],
+    "scene_rule_ids": {
+        "SC-FARMING-SEASON": [
+            "RL-C1435EDAEA06"
+        ]
+    },
+    "schema_version": "1.0",
+    "subcategory_rule_ids": {
+        "P06-01": [
+            "RL-7975CB76ED8D"
+        ],
+        "P06-02": [
+            "RL-A7DA5DDB5EDA",
+            "RL-026434F5F66C",
+            "RL-484433EE205D",
+            "RL-EFBF753668E3",
+            "RL-593F83E40D02",
+            "RL-5D52B01C69FF",
+            "RL-D1AD4868A329",
+            "RL-29AB010B69EC",
+            "RL-FB096D3B82F7",
+            "RL-CCD02AF5D9A3",
+            "RL-52B69293B11B",
+            "RL-C1435EDAEA06"
+        ],
+        "P06-03": [
+            "RL-C1435EDAEA06",
+            "RL-BA45E252C64E",
+            "RL-E3EAA6CFA175",
+            "RL-B039BBB17A23"
+        ],
+        "P06-04": [
+            "RL-A8B189D6B6A7",
+            "RL-FF8723B30AB1"
+        ],
+        "P06-05": [
+            "RL-BA45E252C64E",
+            "RL-AD25FBEA47BC",
+            "RL-FF8723B30AB1",
+            "RL-B039BBB17A23"
+        ],
+        "P06-07": [
+            "RL-C1435EDAEA06",
+            "RL-FF8723B30AB1"
+        ],
+        "P06-08": [
+            "RL-C1435EDAEA06",
+            "RL-BA45E252C64E",
+            "RL-02F117DF7E1F",
+            "RL-FF8723B30AB1",
+            "RL-B039BBB17A23"
+        ]
+    },
+    "updated_at": "2026-09-23T05:21:52Z"
+}

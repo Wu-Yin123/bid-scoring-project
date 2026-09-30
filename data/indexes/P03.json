@@ -1,0 +1,208 @@
+{
+    "category_code": "P03",
+    "category_name": "市政道路、桥梁及交通工程",
+    "professional_tag_rule_ids": {
+        "TAG-BUILDING": [
+            "RL-C250A3B7DDBB",
+            "RL-AEB5EAE232D2",
+            "RL-40EDC57112C6",
+            "RL-D9AECDFF16F0",
+            "RL-F076F495CAB0",
+            "RL-1C6D85B5D561",
+            "RL-EBA333B436B2",
+            "RL-4D44CE854171",
+            "RL-DE037D74FBCE",
+            "RL-0CFC2A48356B",
+            "RL-F6ABE24956DD",
+            "RL-C30A3B3535C8",
+            "RL-EAE1EFF1183E",
+            "RL-DD1CF1486BFE",
+            "RL-BEE27F3FD160",
+            "RL-1AC2AA5833AC",
+            "RL-B5910DAF87A5",
+            "RL-18C6A8E19AD2",
+            "RL-54A9E1A2CC2F"
+        ],
+        "TAG-DECORATION": [
+            "RL-AEB5EAE232D2",
+            "RL-0E84D15B8D70"
+        ],
+        "TAG-FIRE-PROTECTION": [
+            "RL-B5910DAF87A5",
+            "RL-54A9E1A2CC2F"
+        ],
+        "TAG-FOUNDATION": [
+            "RL-54A9E1A2CC2F"
+        ],
+        "TAG-LANDSCAPE": [
+            "RL-A9166FB31DBB",
+            "RL-AEB5EAE232D2",
+            "RL-1C6D85B5D561",
+            "RL-54A9E1A2CC2F",
+            "RL-6CDA92B0334D"
+        ],
+        "TAG-MEP": [
+            "RL-AEB5EAE232D2",
+            "RL-54A9E1A2CC2F"
+        ],
+        "TAG-PIPELINE": [
+            "RL-E51927B2949F",
+            "RL-54A9E1A2CC2F"
+        ],
+        "TAG-PUBLIC-SPACE": [
+            "RL-A9166FB31DBB",
+            "RL-D9AECDFF16F0",
+            "RL-F076F495CAB0",
+            "RL-AA5169B1BA9A",
+            "RL-54A9E1A2CC2F",
+            "RL-0E84D15B8D70",
+            "RL-A06E1E1B719F"
+        ],
+        "TAG-ROAD": [
+            "RL-A9166FB31DBB",
+            "RL-04026A57C0DF",
+            "RL-AEB5EAE232D2",
+            "RL-40EDC57112C6",
+            "RL-D904CDAFE8B7",
+            "RL-D9AECDFF16F0",
+            "RL-F076F495CAB0",
+            "RL-EBA333B436B2",
+            "RL-4D44CE854171",
+            "RL-587491D6D755",
+            "RL-BEE27F3FD160",
+            "RL-1AC2AA5833AC",
+            "RL-54A9E1A2CC2F",
+            "RL-86EBD517AC53",
+            "RL-44294430190D",
+            "RL-6CDA92B0334D",
+            "RL-6F01440DD110",
+            "RL-43A80C74B94D"
+        ],
+        "TAG-ROAD-LIGHTING": [
+            "RL-AEB5EAE232D2",
+            "RL-54A9E1A2CC2F"
+        ],
+        "TAG-SLOPE": [
+            "RL-66E0D11DB2D4",
+            "RL-54A9E1A2CC2F"
+        ],
+        "TAG-STRUCTURAL-REINFORCEMENT": [
+            "RL-44294430190D"
+        ],
+        "TAG-SURVEY": [
+            "RL-54A9E1A2CC2F"
+        ],
+        "TAG-TUNNEL": [
+            "RL-0F6C0E3481B4",
+            "RL-687BDDBBFD41"
+        ],
+        "TAG-WATER": [
+            "RL-54A9E1A2CC2F"
+        ]
+    },
+    "rule_ids": [
+        "RL-13732E04EF21",
+        "RL-95D65CD73CB3",
+        "RL-E51927B2949F",
+        "RL-805621CDE36A",
+        "RL-A9166FB31DBB",
+        "RL-04026A57C0DF",
+        "RL-6BF5D0C0BDE4",
+        "RL-0F6C0E3481B4",
+        "RL-C250A3B7DDBB",
+        "RL-861163B8CF54",
+        "RL-66E0D11DB2D4",
+        "RL-687BDDBBFD41",
+        "RL-2EB0089BD119",
+        "RL-AEB5EAE232D2",
+        "RL-40EDC57112C6",
+        "RL-D904CDAFE8B7",
+        "RL-D9AECDFF16F0",
+        "RL-F076F495CAB0",
+        "RL-1C6D85B5D561",
+        "RL-EBA333B436B2",
+        "RL-4D44CE854171",
+        "RL-DE037D74FBCE",
+        "RL-0CFC2A48356B",
+        "RL-F6ABE24956DD",
+        "RL-C30A3B3535C8",
+        "RL-EAE1EFF1183E",
+        "RL-754EC79FFCB5",
+        "RL-FA8BC68DF863",
+        "RL-DD1CF1486BFE",
+        "RL-3A1742379E7E",
+        "RL-AA5169B1BA9A",
+        "RL-8E3113C09E73",
+        "RL-587491D6D755",
+        "RL-BEE27F3FD160",
+        "RL-1AC2AA5833AC",
+        "RL-B5910DAF87A5",
+        "RL-18C6A8E19AD2",
+        "RL-54A9E1A2CC2F",
+        "RL-86EBD517AC53",
+        "RL-44294430190D",
+        "RL-6CDA92B0334D",
+        "RL-F278121B6537",
+        "RL-0E84D15B8D70",
+        "RL-6F01440DD110",
+        "RL-6511F37D7249",
+        "RL-A06E1E1B719F",
+        "RL-43A80C74B94D"
+    ],
+    "scene_rule_ids": {
+        "SC-CONSTRUCTION-TRAFFIC": [
+            "RL-D904CDAFE8B7"
+        ],
+        "SC-HOSPITAL": [
+            "RL-95D65CD73CB3",
+            "RL-54A9E1A2CC2F",
+            "RL-0E84D15B8D70"
+        ],
+        "SC-WATERFRONT": [
+            "RL-54A9E1A2CC2F"
+        ]
+    },
+    "schema_version": "1.0",
+    "subcategory_rule_ids": {
+        "P03-03": [
+            "RL-54A9E1A2CC2F",
+            "RL-0E84D15B8D70"
+        ],
+        "P03-04": [
+            "RL-54A9E1A2CC2F"
+        ],
+        "P03-05": [
+            "RL-AEB5EAE232D2",
+            "RL-54A9E1A2CC2F"
+        ],
+        "P03-06": [
+            "RL-13732E04EF21",
+            "RL-95D65CD73CB3",
+            "RL-805621CDE36A",
+            "RL-A9166FB31DBB",
+            "RL-04026A57C0DF",
+            "RL-D9AECDFF16F0",
+            "RL-F076F495CAB0",
+            "RL-1C6D85B5D561",
+            "RL-4D44CE854171",
+            "RL-DE037D74FBCE",
+            "RL-0CFC2A48356B",
+            "RL-F6ABE24956DD",
+            "RL-C30A3B3535C8",
+            "RL-EAE1EFF1183E",
+            "RL-754EC79FFCB5",
+            "RL-FA8BC68DF863",
+            "RL-DD1CF1486BFE",
+            "RL-3A1742379E7E",
+            "RL-AA5169B1BA9A",
+            "RL-8E3113C09E73",
+            "RL-BEE27F3FD160",
+            "RL-B5910DAF87A5",
+            "RL-18C6A8E19AD2",
+            "RL-54A9E1A2CC2F",
+            "RL-0E84D15B8D70",
+            "RL-A06E1E1B719F"
+        ]
+    },
+    "updated_at": "2026-09-23T05:21:15Z"
+}

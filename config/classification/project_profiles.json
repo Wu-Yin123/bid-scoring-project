@@ -1,0 +1,16 @@
+{
+  "schema_version": "project-profile.v1",
+  "profile_model": "ProjectProfile",
+  "selection": { "primary_category": "exactly_one", "subcategories": "zero_or_more", "professional_tags": "zero_or_more", "scenes": "zero_or_more" },
+  "profiles": [
+    { "profile_id": "P01", "name": "房屋建筑新建及扩建工程", "legacy_project_type": "building_construction", "regulation_package": "config/regulations/building_construction.json", "taxonomy_ref": "P01" },
+    { "profile_id": "P02", "name": "建筑装饰、修缮及既有建筑改造工程", "legacy_project_type": "municipal_renovation", "regulation_package": "config/regulations/municipal_renovation.json", "taxonomy_ref": "P02" },
+    { "profile_id": "P03", "name": "市政道路、桥梁及交通工程", "legacy_project_type": "municipal_road", "regulation_package": "config/regulations/municipal_road.json", "taxonomy_ref": "P03" },
+    { "profile_id": "P04", "name": "市政管网、排水及防涝工程", "legacy_project_type": "municipal_pipe_network", "regulation_package": "config/regulations/municipal_pipe_network.json", "taxonomy_ref": "P04" },
+    { "profile_id": "P05", "name": "水利工程", "legacy_project_type": "water_conservancy", "regulation_package": "config/regulations/water_conservancy.json", "taxonomy_ref": "P05" },
+    { "profile_id": "P06", "name": "高标准农田及土地整治工程", "legacy_project_type": "high_standard_farmland", "regulation_package": "config/regulations/high_standard_farmland.json", "taxonomy_ref": "P06" },
+    { "profile_id": "P07", "name": "乡村建设及农村人居环境整治工程", "legacy_project_type": "large_natural_village_renovation", "regulation_package": "config/regulations/large_natural_village_renovation.json", "taxonomy_ref": "P07" },
+    { "profile_id": "P08", "name": "综合设施提升工程", "legacy_project_type": "integrated_facilities", "regulation_package": "config/regulations/integrated_facilities.json", "taxonomy_ref": "P08", "route_status": "future_project_profile" },
+    { "profile_id": "P09", "name": "公路工程", "legacy_project_type": "highway", "regulation_package": "config/regulations/highway.json", "taxonomy_ref": "P09", "route_status": "future_project_profile" }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+    "category_code": "P09",
+    "category_name": "公路工程",
+    "professional_tag_rule_ids": {
+        "TAG-BRIDGE": [
+            "RL-0CB16CE6913C"
+        ],
+        "TAG-BUILDING": [
+            "RL-5D25EEA2BF1F",
+            "RL-084F702ECF10",
+            "RL-C1F33909000C"
+        ],
+        "TAG-FOUNDATION": [
+            "RL-A2DCDF8B65D3"
+        ],
+        "TAG-MEP": [
+            "RL-084F702ECF10",
+            "RL-C2EC7A2DE988"
+        ],
+        "TAG-ROAD": [
+            "RL-86EBD517AC53",
+            "RL-30C6A47FE4EE",
+            "RL-6B09B914E2E2",
+            "RL-79808FADF604",
+            "RL-A2DCDF8B65D3"
+        ],
+        "TAG-STRUCTURE": [
+            "RL-0CB16CE6913C"
+        ],
+        "TAG-SURVEY": [
+            "RL-5D25EEA2BF1F"
+        ],
+        "TAG-TRENCH": [
+            "RL-A2DCDF8B65D3"
+        ],
+        "TAG-TUNNEL": [
+            "RL-C2EC7A2DE988"
+        ],
+        "TAG-WATER": [
+            "RL-084F702ECF10"
+        ]
+    },
+    "rule_ids": [
+        "RL-5D25EEA2BF1F",
+        "RL-084F702ECF10",
+        "RL-C1F33909000C",
+        "RL-86EBD517AC53",
+        "RL-30C6A47FE4EE",
+        "RL-6B09B914E2E2",
+        "RL-3005F800D0E0",
+        "RL-870EF91F54C0",
+        "RL-79808FADF604",
+        "RL-A2DCDF8B65D3",
+        "RL-0CB16CE6913C",
+        "RL-C2EC7A2DE988"
+    ],
+    "scene_rule_ids": {
+    },
+    "schema_version": "1.0",
+    "subcategory_rule_ids": {
+        "P09-01": [
+            "RL-C1F33909000C",
+            "RL-30C6A47FE4EE"
+        ],
+        "P09-04": [
+            "RL-3005F800D0E0",
+            "RL-0CB16CE6913C",
+            "RL-C2EC7A2DE988"
+        ]
+    },
+    "updated_at": "2026-09-23T05:21:15Z"
+}
